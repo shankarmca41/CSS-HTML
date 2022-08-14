@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+           
+           /* flex-direction: row-reverse;  */
+           /*flex-wrap: wrap;      next  row move chestundi*/
+           /*flex-flow anedi = ( flex-direction + flex-wrap) */
+          /* justify-content: center,space-around,space-between,space-evenly,
+             flex-end,flex-start,first baseline*/
+
+         /*(  justify-content: main axis and cross axis;
+
+           flex-direction: row aithe  main-axis -x  cross-axis-y;
+           flex-direction: column aithe  main-axis -y  cross-axis-x;*/
+
+             /*justify-content: align flex items/childrens along main axis;
+             align-items: align flex items/childrens along cross-axis*/;
+            width: 800px;
+            height: 500px;  
+            border: 2px solid red;
+        }
+        .child{
+            width: 100px;
+            height: 100px;
+            
+        }
+        #c1{
+            background-color: red;
+        }
+        #c2{
+            background-color: green;
+        }
+        #c3{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="c1" class="child">one</div>
+        <div id="c2" class="child">Two</div>
+        <div id="c3" class="child">Three</div>
+        
+    </div>
+    
+</body>
+</html>
